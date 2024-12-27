@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:  #edf10f;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f1c40f;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #edf10f;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Skills Section */
+#skills {
+    padding: 3rem;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+
+#skills .skill-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+#skills .skill-card img {
+    width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+#skills .skill-card h5 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+#skills .skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Projects Section */
+#projects {
+    padding: 3rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    padding: 3rem;
+    background:#000000;
+    border-radius: 10px;
+    color: white;
+}
+
+#contact .form-control {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+#contact .form-control:focus {
+    outline: none;
+    border-color: #f1c40f;
+    box-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
+}
+
+button.btn {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #d4ac0d;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer .social-links img {
+    width: 25px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s;
+}
+
+footer .social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    #skills .skill-card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
